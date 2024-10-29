@@ -11,8 +11,16 @@ python = "^3.11"
 pandas = "^2.2.3"
 requests = "^2.32.3"
 bs4 = "^0.0.2"
+commitizen = "^3.30.0"
 
 
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver2"
+version_provider = "poetry"
+update_changelog_on_bump = true
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
